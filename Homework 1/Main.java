@@ -18,12 +18,19 @@ public class Main {
         //finish this one for me by receiving and printing the user's age back to them
         System.out.println("How old are you? ");
 
+        String age = sc.nextLine();
+
+        System.out.println("You are " + age + " years old.");
+
 
         //can you do some math for me? take these variable and print out the sum of them!
         int num1 = 10;
         int num2 = 37;
         //?
 
+        int sum = num1 + num2;
+
+        System.out.println(sum);
         
 
     }
