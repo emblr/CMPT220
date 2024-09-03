@@ -20,7 +20,7 @@ public class Main {
 
         String age = sc.nextLine();
 
-        System.out.println("You are " + age + " years old.");
+        System.out.println(name + ", you are " + age + " years old.");
 
 
         //can you do some math for me? take these variable and print out the sum of them!
@@ -30,7 +30,8 @@ public class Main {
 
         int sum = num1 + num2;
 
-        System.out.println(sum);
+        System.out.println("The sum of " + num1 + " plus " + num2+ " is " + sum);
+        
         
 
     }
