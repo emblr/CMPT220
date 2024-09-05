@@ -29,8 +29,10 @@ public class Main {
         //?
 
         int sum = num1 + num2;
+        
 
-        System.out.println("The sum of " + num1 + " plus " + num2+ " is " + sum);
+        System.out.println("The sum of " + num1 + " plus " + num2+ " is " + sum + ".");
+        
         
         
 
