@@ -18,7 +18,7 @@ public class Main {
         //finish this one for me by receiving and printing the user's age back to them
         System.out.println("How old are you? ");
 
-        String age = sc.nextLine();
+        Integer age = sc.nextInt();
 
         System.out.println(name + ", you are " + age + " years old.");
 
