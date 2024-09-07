@@ -24,11 +24,11 @@ public class Main {
 
 
         //can you do some math for me? take these variable and print out the sum of them!
-        int num1 = 10;
-        int num2 = 37;
+        Integer num1 = 10;
+        Integer num2 = 37;
         //?
 
-        int sum = num1 + num2;
+        Integer sum = num1 + num2;
         
 
         System.out.println("The sum of " + num1 + " plus " + num2+ " is " + sum + ".");
