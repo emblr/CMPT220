@@ -13,7 +13,7 @@ public class Debug {
             System.out.println("Var1 is less than 4");
         }
 
-        int var2 = 5;
+        int var2 = 6;
         if (var2 == 5){
             System.out.println("Var2 is equal to 5.");
         }else if (var2 > 5){
