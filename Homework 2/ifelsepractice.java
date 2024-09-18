@@ -88,7 +88,7 @@ public class ifelsepractice {
             System.out.println("A 0/3. Uh you might want to try again.");
         }
 
-        
+        sc.close();
     }
 }
 
