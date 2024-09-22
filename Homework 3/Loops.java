@@ -45,6 +45,6 @@ that is why i start at 0 in my for loop, if i started at 1 the first letter that
 simple translation:
 i ask the user for a string input
 after receiving the input, i create a varibale that counts the lenght of the chr of the string the user typed
-in a for loop, i start at 0 to print out the first letter as that is the first inde(place value)) on any chr, not 1
+in a for loop, i start at 0 to print out the first letter as that is the first index of the chr, not 1
 it will keep going until i is the lenght of the string(if not it will create an error because there is nothing to print)
  */
