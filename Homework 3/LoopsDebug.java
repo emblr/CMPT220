@@ -55,7 +55,7 @@ public class LoopsDebug {
         Integer LenWord = word.length();
         
         while(LenWord > 0){
-            //System.out.println(word.charAt(LenWord - 1));
+            
             reverse += word.charAt(LenWord - 1);
             LenWord -= 1;
             
