@@ -13,7 +13,7 @@ public class Loops {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Please type in any word of your choice");
+        System.out.print("Please type in any word of your choice: ");
         String input = sc.nextLine();
 
         Integer wordLength = input.length();
