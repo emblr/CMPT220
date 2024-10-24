@@ -12,36 +12,49 @@ I give you two fully working method examples with and without parameters and cal
 */
 
 import java.util.Scanner;
-public class Main {
+public class debugFunctions {
+    public static int Factorial(int X){
+        Integer product = 1;
+        for(int i = 1; i <= X; i++){
+            product *= i;
+        }
+        return product;
+
+    }
+    public static int EveryOtherSum( int num){
+        Integer sum = 0;
+        for (int i = 1; i <= num; i += 2){
+            sum += i;
+        }
+        return sum;
+    }
+    public static String Reverse(String word){
+        String reverse = "";
+        Integer Lenword = word.length();
+        while(Lenword > 0){
+            reverse += word.charAt(Lenword - 1);
+            Lenword -= 1;
+        }
+        return reverse;
+    }
+
     public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number to get its factorial: ");
+        Integer factNum = sc.nextInt();
+        System.out.println("The factorial of " + factNum + " is " + Factorial(factNum));
 
+        System.out.print("Enter a number and I will tell you the sum of every other number: ");
+        Integer OddNum = sc.nextInt();
+        System.out.println("The sum of every other number is " + EveryOtherSum(OddNum));
 
-    System.out.println("Enter your first number to be added");
-    int firstInput = sc.nextInt();
-    System.out.println("Enter your second number to be added");
-    int secondInput = sc.nextInt();
-    //remember this method is returning, so we need to print it out
-    System.out.println(add(firstInput,secondInput));
+        System.out.print("Enter a word so it can be reversed: ");
+        sc.nextLine();
+        String RevWrd = sc.nextLine();
+        System.out.println(RevWrd + " reversed is " + Reverse(RevWrd));
 
-    System.out.println("im going to print out the word Dog now.");
-    printDog();
-      
+        sc.close();
     }
 
-  
-    public static int add(int zyx, int tuv){
 
-
-        return(zyx + tuv);
-
-
-    }
-
-  
-    public static void printDog(){
-        System.out.println("Dog");
-    }
-
-  
 }
