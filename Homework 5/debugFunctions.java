@@ -21,7 +21,7 @@ public class debugFunctions {
         return product;
 
     }
-    public static int EveryOtherSum( int num){
+    public static int EveryOtherSum(int num){
         Integer sum = 0;
         for (int i = 1; i <= num; i += 2){
             sum += i;

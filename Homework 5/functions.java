@@ -8,21 +8,28 @@ import java.util.Scanner;
 public class functions {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a year: ");
-        Integer year = sc.nextInt();
-        System.out.println(LeapYear(year));
-    }
-    public static String LeapYear(int year){
-        if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0){
-                    return ("It is a leap year");
-                }
-                return ("It is not a leap year");
-            }
-            return ("It is a leap year");
-        }
-        return ("It is not a leap year");
+        System.out.println("Enter the loan amount (principal): ");
+        double loan = sc.nextDouble();
 
+        System.out.println("Enter the annual interest rate: ");
+        double InterestRate = sc.nextDouble();
+
+        System.out.println("Enter the loan term (in years): ");
+        int loanTerm = sc.nextInt();
+
+        System.out.printf("Your monthly mortgage payment is: $" + Mortgage(loan, InterestRate, loanTerm));
+        sc.close();
+    }
+
+    public static double Mortgage(double principal, double annualRate, int years) {
+        
+        double monthlyRate = (annualRate / 100) / 12;
+        int totalPayments = years * 12;
+
+        // Mortgage payment formula
+        double monthlyPayment = (principal * monthlyRate * Math.pow(1 + monthlyRate, totalPayments)) / (Math.pow(1 + monthlyRate, totalPayments) - 1);
+
+        return monthlyPayment;
     }
 }
+
