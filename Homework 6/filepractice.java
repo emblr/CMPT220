@@ -11,19 +11,40 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args){
+public class filepractice {
+    public static void main(String[] args) throws IOException{
         //do you need something to start?
-        File inputfile = new File(/*what goes in here?*/);
+        File inputfile = new File("practice.txt");
+        FileWriter writer = new FileWriter("info.txt");
+        List<String> names = new ArrayList<>();
+        Integer NumNames = 0;
+        
         try {
             Scanner input = new Scanner(inputfile);
             while(input.hasNext()){
-                //what do we do at every line of the file?
+                String name = input.nextLine();
+                NumNames++;
+                if(input.hasNext()){
+                    String gpa = input.nextLine();
+                    double gpaNum = Double.parseDouble(gpa);
+                    if (gpaNum > 3.5){
+                        names.add(name);
+                    }
+                }
             }
+            input.close();
+            writer.write("These are the names of people who have over a 3.5 gpa:");
+        for(String name : names){
+            writer.write("\n" + name);
+        }
+        writer.write("\nThere are a total number of " + NumNames + " names.");
+        
+        writer.close();
+        
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
       //optional if you want to keep this, just to show what the indices are of the list you created
-        System.out.println(list);
+        
     }
 }

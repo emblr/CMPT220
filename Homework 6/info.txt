@@ -1,0 +1,6 @@
+These are the names of people who have over a 3.5 gpa:
+Amy
+Billie
+Danielle
+Maddie
+There are a total number of 9 names.
